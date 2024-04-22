@@ -11,7 +11,15 @@
         z-index: 999;    
 }
 
-        
+        .fa-whatsapp{
+                font-size: 60px;    /*hace gran el dibujo de whasap dentro del circulo verde*/
+        }
+
+        .float:hover{
+                background-color: #28e76e;
+
+        }
+
 
 
 
