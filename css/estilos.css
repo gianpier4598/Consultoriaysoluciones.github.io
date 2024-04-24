@@ -109,7 +109,7 @@ body{
 }
 
 .nav__links{
-        color: #fff;
+        color: #fff;          /*COLOR LETRAS MENU , INICIO, ACERCA DE , CONTACTO , BLOG */ 
         text-decoration: none;
 }
 
