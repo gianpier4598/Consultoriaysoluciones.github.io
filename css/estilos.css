@@ -61,7 +61,7 @@ body{
         position : relative;
         display: grid;
         grid-template-rows: 100px 1fr;
-        color: #fff;
+        color: #fff;  /*LETRAS COLOR BLANCO*/
 }
 
 .hero::before {
@@ -73,8 +73,8 @@ body{
         height:100%;
         background-image : linear-gradient(180deg, #0000008c 0% , #0000008c 100% ), url('../images/edificiasos.jpg');
         background-size : cover;
-        clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
-        z-index: -1;
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%); /*RECORTE CON CLIPPY DE LA FOTO PARA QUE QUEDE TIPO POLIGONO(CODIGO) */
+        z-index: -1;  /*ARREGLAMOS TRANSPARTENCIA LETRAS , SIN ESTO NO SE VEN LAS LETRAS*/
     
 
 }
@@ -102,14 +102,14 @@ body{
          margin-left: auto;
          padding: 0;
          display: grid;
-         grid-auto-flow:column;
+         grid-auto-flow:column;  /*HACE QUE LAS PALABRAS SE PONGAN UNA ALADO DE LA OTRA*/
          grid-auto-columns: max-content;
-         gap: 2em;
+         gap: 3em; /*ESPACIO ENTRE SECCIONES MENU  (INICIO ,ACERCA DE, CONTACTO, BLOG ) */
 
 }
 
 .nav__links{
-        color: #fff;          /*COLOR LETRAS MENU , INICIO, ACERCA DE , CONTACTO , BLOG */ 
+        color: #fff;          /*COLOR LETRAS BLANCO MENU , INICIO, ACERCA DE , CONTACTO , BLOG */ 
         text-decoration: none;
 }
 
@@ -127,12 +127,12 @@ body{
 }
 
 .nav__close{
-        display: var(--show,none);
+        display: var(--show, none);
 
   }
 
-  /*hero container*/
-
+  /*hero container ( ESTA SECCION ES LA QUE SE ENCEUNTRA EN MEDIO DE LA FOTO RECORTADA   */
+  
 
 .hero__container{
         max-width: 800px;        
@@ -140,7 +140,7 @@ body{
         display: grid;      
         grid-auto-rows: max-content;
         align-content: center;
-        gap: 1em;
+        gap: 1em;  /*ESPACIO ENTRE RENGLONES (LAS MEJORES..,  MEJORA EL RENDIMIENTO..,COMIENZAAHORA)*/
         padding-bottom: 100px;
         text-align: center;
 
@@ -395,12 +395,13 @@ overflow:hidden;
         /*Questions*/
 
         .questions{
-                text-align: center ;     
+                text-align: center ;    
+                
         }
 
         .questions__container{
                 display:grid;
-                gap: 2em;
+                gap: 2em;  /*ESPACIO ENTRE LAS PREGUNTAS*/
                 padding-top: 50px;
                 padding-bottom: 100px;
 
@@ -410,8 +411,11 @@ overflow:hidden;
                 padding: 0;
                 transition: padding  .3s;
                 border: 1px solid  #5454D4;
-                border-radius: 6px;
+                border-radius: 5px;
         }
+     
+
+       
 
         .questions__padding--add{
                 padding-bottom: 30px; 
@@ -426,9 +430,9 @@ overflow:hidden;
         .questions__title{
                 text-align: left;  /*alinea todo hacia la izquierda*/
                 display: flex;
-                font-size: 20px;
-                padding: 30px o 30px;
-                cursor: pointer;
+                font-size: 20px;    /*TAMAÑO LETRAS DE LAS PREGUNTAS*/
+                padding: 30px o 30px;  /*NO PASA NADA CUANDO MODIFICO*/
+                cursor: pointer;  /*DEBE SER EL DEDO CUANDO PASO POR LAS PREGUNTAS*/
                 color: var(--color-title);
                 justify-content: space-between;               
 
@@ -436,17 +440,16 @@ overflow:hidden;
 
 
 
-
-        .questions__arrow{      
-                border-radius: 50% ; 
+        .questions__arrow{      /*TODO RESPECTO FECHITAS PREGUNTAS*/
+                border-radius: 50%; 
                 background-color: var(--color-title);
-                width: 25px;
-                height: 25px;
-                display : flex ; 
+                width: 25px;       /*ALTO FECHITAS QUE ABREN PREGUNTAS*/
+                height: 25x;       /*ALTO FELICHITAS QUE ABREN PREGUNTAS*/
+                display : flex ;     
                 justify-content: center;
                 align-items: center;   
                 align-self: flex-end;    
-                margin-left: 10px;   
+                margin-left: 10px;   /*NO SE QUE HACE MODIFICA NO CAMBIA NADA*/
                 transition: transform .3s;
 
         }
@@ -460,7 +463,7 @@ overflow:hidden;
         
         .questions__show{
                 text-align: left;
-                height: 0;
+                height: 0;  /* AL PARECER AL NO DARLE ALTURA ESCONDE LAS PREGUNTAS*/
                 transition: height .3s;               
 
         }
@@ -473,7 +476,7 @@ overflow:hidden;
          .questions__copy{              
                 width: 60%;
                 margin: 0 auto;
-                margin-bottom: 30px;
+                margin-bottom: 20px;
          }
 
          /* Footer */
