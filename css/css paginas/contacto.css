@@ -1,3 +1,30 @@
+.float{     /*BOTON DE WHATSAP*/
+        position: fixed;   /*para que quede fijo en un solo lugar cosa que scrolee no se mueve para ningun lago*/
+        width: 60px;
+        height: 60px;
+        background-color: #25d366; /*colorsito whatsap*/
+        bottom: 40px;
+        right: 40px; /*esto lo posiciona en la esquina izquierda parte inferior*/
+        border-radius: 50%;
+        text-align: center; /* el logo va quedar centrado dentro de la bola verde*/
+        box-shadow: 2px 2px 3px #999; /*le da un pequeño redondeado gris en los bordes*/
+        z-index: 999;    
+}
+
+        .fa-whatsapp{
+                font-size: 60px;    /*hace gran el dibujo de whasap dentro del circulo verde*/
+        }
+
+        .float:hover{
+                background-color: #28e76e;
+
+        }
+
+
+
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 
