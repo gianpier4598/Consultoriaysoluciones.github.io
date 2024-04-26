@@ -3,11 +3,11 @@
     const menu = document.querySelector('.nav__link');
     const closeMenu = document.querySelector('.nav__close');
 
-    openButton.addEventListener('click', ()=>{
+    openButton.addEventListener('click', ()=>{    /*ACCION ABRIR MENU*/
         menu.classList.add('nav__link--show');
     });
 
-    closeMenu.addEventListener('click', ()=>{
+    closeMenu.addEventListener('click', ()=>{     /*ACCION CERRAR MENU */
         menu.classList.remove('nav__link--show');
     });
 

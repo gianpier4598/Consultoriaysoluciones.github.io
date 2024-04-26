@@ -600,7 +600,7 @@ overflow:hidden;
 
                 .nav__link--show{
                         --show: block;
-                        opacity: 1 ;
+                        opacity:1 ;
                         pointer-events: unset ;
                 }
 
