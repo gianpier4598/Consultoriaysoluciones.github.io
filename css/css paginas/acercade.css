@@ -24,7 +24,6 @@
 
 
 
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 
@@ -136,7 +135,7 @@ body{
 
 .hero__container{
         max-width: 800px;        
-        --padding-container:0;
+        --padding-container: 0;
         display: grid;      
         grid-auto-rows: max-content;
         align-content: center;
@@ -144,15 +143,14 @@ body{
         padding-bottom: 100px;
         text-align: center;
 
-
 }
 
-.hero__title{
+.hero__title{                /*TAMAÑO LETRAS DE LOS EDIFICIOS*/
         font-size: 3rem;
 
 }
 
-.hero__paragraph{
+.hero__paragraph{             /*DESCO*/
         margin-bottom: 20px;
 
 }
